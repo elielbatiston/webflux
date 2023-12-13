@@ -57,6 +57,27 @@
 					"response": []
 				},
 				{
+					"name": "GET playlist response entity",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/playlist/b682d74a-e9d7-47ae-9a5a-8e89250b5387/response-entity",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"playlist",
+								"b682d74a-e9d7-47ae-9a5a-8e89250b5387",
+								"response-entity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "GET events",
 					"request": {
 						"method": "GET",

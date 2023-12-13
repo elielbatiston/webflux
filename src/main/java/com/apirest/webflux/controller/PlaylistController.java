@@ -3,6 +3,7 @@ package com.apirest.webflux.controller;
 import com.apirest.webflux.document.Playlist;
 import com.apirest.webflux.services.PlaylistService;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -28,6 +29,13 @@ public class PlaylistController {
 	@GetMapping("{id}")
 	public Mono<Playlist> getPlaylistId(@PathVariable final String id) {
 		return service.findById(id);
+	}
+
+	@GetMapping("{id}/response-entity")
+	public Mono<ResponseEntity<Playlist>> getPlaylistIdResponseEntity(@PathVariable final String id) {
+		return service.findById(id)
+			.map(ResponseEntity::ok)
+			.defaultIfEmpty(ResponseEntity.notFound().build());
 	}
 
 	@PostMapping
