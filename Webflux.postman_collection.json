@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "dcae44ee-8c87-47b4-b8f8-455c0a99c19a",
+		"name": "Webflux",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10393741"
+	},
+	"item": [
+		{
+			"name": "nao-funcional",
+			"item": [
+				{
+					"name": "POST playlist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Teste\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/playlist",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"playlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET playlist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/playlist",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"playlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET events",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/playlist/events",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"playlist",
+								"events"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET playlistById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/playlist/6578f1a0f3e60f0bd54ecec6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"playlist",
+								"6578f1a0f3e60f0bd54ecec6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "funcional",
+			"item": [
+				{
+					"name": "POST playlist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Teste\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/playlist-funcional",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"playlist-funcional"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET playlist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/playlist-funcional",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"playlist-funcional"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET playlistById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/playlist-funcional/6578f67bbf72bf71724d801f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"playlist-funcional",
+								"6578f67bbf72bf71724d801f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
